@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bigwin365</title>
+		<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="bw.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+	
+	<div class="menu">
+	<div class="logo"><img src='bw.jpg' alt='logo'/></div>
+	<div class="menu-item active"><i class="fa fa-home" aria-hidden="true"></i></div>
+	<div class="menu-item active"><i class="fa fa-key" aria-hidden="true"></i></div>
+	<div class="menu-item active"><i class="fa fa-bullhorn" aria-hidden="true"></i></div>
+	<div class="menu-item active"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+	<div class="menu-item active"><i class="fa fa-exchange" aria-hidden="true"></i></div>
+	<div class="menu-item active"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+	<div class="menu-item active"><i class="fa fa-cog" aria-hidden="true"></i></div>
+	<div class="menu-item active"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+	<div class="menu-item"><i class="fa fa-heart" aria-hidden="true"></i></div>
+	<div class="menu-item"><i class="fa fa-history" aria-hidden="true"></i></div>
+	
+	</div> 
+	<div class="menu-opened">
+	<div class="menu-button" id='open-menu-btn'><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+	<div class="logo-name"><span class='logo-name-bold'>BIGWIN365 </span><span class='logo-name-reg'>AFFILIATES</span></div>
+	<div class="opened-menu-item active">Home <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+	<div class="opened-menu-item active">Account Managment <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+	<div class="opened-menu-item active">Marketing Tools <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+	<div class="opened-menu-item active">Reports <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+	<div class="opened-menu-item active">Payments <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+	<div class="opened-menu-item active">Content <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+	<div class="opened-menu-item active">Settings <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+	<div class="opened-menu-item active">Communications <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+	<div class="opened-menu-item non-active">Favorites <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+	<div class="opened-menu-item non-active">Recently Used <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+	
+	</div>
+	
+	
+	<div class="sections">
+	<section class="header">
+		<div class="header-wrapper">
+				<div class="language"><svg 
+		 xmlns="http://www.w3.org/2000/svg"
+		 xmlns:xlink="http://www.w3.org/1999/xlink"
+		 width="76px" height="56px">
+		<image  x="0px" y="0px" width="76px" height="56px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAA4CAMAAABg+u7OAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACNFBMVEXg4OD////h4eHc3NxMTEwmJibKysrt7e1fX19aWlrm5ub29vZ7e3v39/eSl7u/1OuDlcNtgsJtgr9rgLzZ3OubY3+aYHzZ3OxVarJTZrRJXKxngLaKUm2Fm8JLS0uPj4/FxcXGxsbs7OxgYGCSkpL7+/t6enqkpsfrr6j+/v/c4POkrtiirdnnk4vljYSVn9CQm83Hx+HkiXz+/fmZsc6urq4+Pj5tg72/yO3po6XvwLyKldLgZWnfYGF8jc/goareioqgqM8oN5Td3d3u7u6AgIBycnJra2vv7+9tg76kr9uDkNLXvd3hgH7fXFzfWFnhbWn45+fT2+xFS6N2gcEiMY6RkZGQkJDQ0NClpaX09PTeVVXeT0/O1eja2tr8/PyYmJiaYXvmkofgZGTfX1/fWVndTU3cRkbZQUHYPDzWODjTMjLULy/ZU0hzJTzq6upjY2Nubm7a3OzdPz/aOTr///79/f39/fz7/PzL1Oevr6/AwMAxMTFLXq6PmsxeZrTU1O767OvaY1/cNTfZMzT///3GREO0mLMfIZZYYKsOGmn5+fmEhIREV6qlrdLZgH3YiYljc8LZLzDXLS///v49QZ/6///emJvLYFyHlMsNGGXe3t5SUlKcstH+/v3ehnjCvtl1f75zf7/dVUrbU0b+/f1cZrJYXqe5wtj9/PjOYE9tcaGFnb6CRmJRaZ4hMJgeLY8aKYzQ1eZyIDpxHTbM0ucRHXAQHG0PGmskNHubu9VDOGwImcqJAAAAAWJLR0QB/wIt3gAAAAd0SU1FB+QHChIYHBUkfEgAAAGfSURBVFjDY2BgpBpgYBishjENWpcNZsOYBq3LRg0bToZRNZ0NVsMGbxE0eF02LAxjZmEFATZ2Dk4uRkZuHh5eIgzj4xcQFBIWERUTl5CUkpaRhRsmJ6+goKigxK7MqqLKyKumxk2EYeoamlraOpq6epr6BoZGxiYIw0zBNDsHqxkbsYaZW1haMVoz2tgy2tk7MDo6wcSdoYa5cLi6uXtgMwxLOvP08vbxZWT082cMCAwKDglFuAwUZGFAl4VHmEVGEecyEU0wFR0DpjRjkcNMUSEO6LKw+ASWCDU1LBGAkdETk5JTUqNj0tIzMrOyc3LzELEJ82YYY36BWyFRLiuCuKy4hLGUsay8ohLhsipoBIQxMlbXsKoRkzRq6+obGpsYm1sYW9vaOzq7kLypCATApAE0rLuHlah01tvH2D9hIuOkyVOmTps+Y+Ys1AgAJVqgYYyz5xBl2Nx58xcsXKS5eMnSZctXrFy1mpFogCUC1qxdt37Dxk2bt2zdtn3Hzl27iTeMquXZ4C0cB6/LRoxhow3kUcOGmGFULjUGbQ4AAFxSXrwuwATpAAAAAElFTkSuQmCC" />
+		</svg></div>
+		<div class="user">
+			<div class="photo"></div>
+			<div class="user-info">
+				<div class="user-name">Hello, Max!</div>
+				<div class="user-last-login">Last login: Thu Mar 20 2014</div>
+			</div>
+			<div class="triangle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+
+		</div>
+</div>
+	
+	</section>
+	<section class="dashboard">
+		<div class="dashboard-head">
+			<div class="dashboard-text">Dashboard</div>
+			<div class="dashboard-favorite"><p>&#10084; Add this page to favorites<p>  </div>
+		</div>
+		<div class="dashboard-stats">
+			<div class="signups dashboard-stats-block"><p class="digit">25</p><div class="stats-block-inner"><span class="icon icon-signups"><i class="fa fa-check" aria-hidden="true"></i></span><p class="heading">signups</p></div></div>
+			<div class="profit dashboard-stats-block"><p class="digit">$1000</p><div class="stats-block-inner"><span class="icon icon-profit"><i class="fa fa-line-chart" aria-hidden="true"></i></span><p class="heading">profit</p></div></div>
+			<div class="commissions dashboard-stats-block"><p class="digit">$350</p><div class="stats-block-inner"><span class="icon icon-commissions"><i class="fa fa-money" aria-hidden="true"></i></span><p class="heading">commissions</p></div></div>
+			<div class="pending dashboard-stats-block"><p class="digit">$300</p><div class="stats-block-inner"><span class="icon icon-panding"><i class="fa fa-question-circle" aria-hidden="true"></i></span><p class="heading">pending commissions</p></div></div>
+		</div>
+	</section>
+<section class="charts">
+
+	<div class="line-chart">
+		<div class='line-wrapper'>
+		<span class="chart-heading">Medias Staats</span>
+		<span class="chart-settings">last week <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></span>
+		</div>
+
+		<canvas id="lineChart" width="500" height="300"></canvas>
+	</div>
+
+<div class='doug-wrap'>	
+	<p class='doug-heading'>Active Medias</p>
+	<div class="doughnut-chart">
+		<canvas id="doughnutChart" width="170" height="240"></canvas>
+	</div>
+	<div class="doug-digit">50</div>
+</div>
+
+
+	
+	
+	<div class="map-wrapper">
+		<div id="chartdiv"></div>
+	</div>
+
+</section>
+	<section class="statistics">
+		<div class='top-affiliates stats-wrap'>
+			<div class="statistics-heading">Top Affiliates</div>
+			<div class="users-list">
+				<table>
+					 
+					  <tr id='head-table'>
+					    <th>ID</th>
+					    <th>Username</th>
+					    <th>Profit($)</th>
+					    <th>Commission($)</th>
+					    <th>View</th>
+					    
+					  </tr>
+					  <tr>
+					    <td>1007</td>
+					    <td>Simona</td>
+					    <td>55</td>
+					    <td>Simona</td>
+					    <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					 	  <tr>
+					    <td>1008</td>
+					    <td>Ariana</td>
+					    <td>45</td>
+					    <td>Adelina</td>
+					   <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					  	  <tr>
+					    <td>1009</td>
+					    <td>Adam</td>
+					    <td>35</td>
+					    <td>Adam</td>
+					     <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					  	  <tr>
+					    <td>1010</td>
+					    <td>John</td>
+					    <td>25</td>
+					    <td>John</td>
+					    <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					  	  <tr>
+					    <td>1011</td>
+					    <td>Garry</td>
+					    <td>15</td>
+					    <td>Garry</td>
+					   <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					</table>
+			</div>
+		</div>
+		<div class='user-signups stats-wrap'>
+			<div class="statistics-heading">Signup</div>
+			<div class="users-list">
+			<table>
+					 
+					  <tr id='head-table'>
+					    <th>ID</th>
+					    <th>Username</th>
+					    <th>Profit($)</th>
+					    <th>Commission($)</th>
+					    <th>View</th>
+					    
+					  </tr>
+					  <tr>
+					    <td>1007</td>
+					    <td>Simona</td>
+					    <td>55</td>
+					    <td>Simona</td>
+					    <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					 	  <tr>
+					    <td>1008</td>
+					    <td>Ariana</td>
+					    <td>45</td>
+					    <td>Adelina</td>
+					   <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					  	  <tr>
+					    <td>1009</td>
+					    <td>Adam</td>
+					    <td>35</td>
+					    <td>Adam</td>
+					     <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					  	  <tr>
+					    <td>1010</td>
+					    <td>John</td>
+					    <td>25</td>
+					    <td>John</td>
+					    <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					  	  <tr>
+					    <td>1011</td>
+					    <td>Garry</td>
+					    <td>15</td>
+					    <td>Garry</td>
+					   <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					</table>
+			</div>
+		</div>
+		<div class='pending-commissions stats-wrap'>
+			<div class="statistics-heading">Pending Commissions</div>
+			<div class="users-list">
+			<table>
+					 
+					  <tr id='head-table'>
+					    <th>ID</th>
+					    <th>Username</th>
+					    <th>Profit($)</th>
+					    <th>Commission($)</th>
+					    <th>View</th>
+					    
+					  </tr>
+					  <tr>
+					    <td>1007</td>
+					    <td>Simona</td>
+					    <td>55</td>
+					    <td>Simona</td>
+					    <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					 	  <tr>
+					    <td>1008</td>
+					    <td>Ariana</td>
+					    <td>45</td>
+					    <td>Adelina</td>
+					   <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					  	  <tr>
+					    <td>1009</td>
+					    <td>Adam</td>
+					    <td>35</td>
+					    <td>Adam</td>
+					     <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					  	  <tr>
+					    <td>1010</td>
+					    <td>John</td>
+					    <td>25</td>
+					    <td>John</td>
+					    <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					  	  <tr>
+					    <td>1011</td>
+					    <td>Garry</td>
+					    <td>15</td>
+					    <td>Garry</td>
+					   <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+					  </tr>
+					</table>
+			</div>
+		</div>
+	</section>
+</div> 
+
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/maps.js"></script>
+<script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+<script src="https://www.amcharts.com/lib/4/geodata/data/countries2.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
